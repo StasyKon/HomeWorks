@@ -22,7 +22,6 @@ function copy(target, origin) {
 copy(target, origin)
 console.log(origin, copy(target, origin));
 
-let res;
 
 // target.name = 'Ivan';
 

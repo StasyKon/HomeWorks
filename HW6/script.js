@@ -24,13 +24,19 @@ console.log(origin, copy(target, origin));
 
 
 // target.name = 'Ivan';
+// target.age = 56;
+// target.country = 'Ukraine';
 
 function compareObject(firstOb, secondOb) {
-    for (let key in firstOb) {
-        if (firstOb[key] === secondOb[key]) {
-            return true
-        } else return false;
-    }
+    let result;
+    if (Object.keys(firstOb).length === Object.keys(secondOb).length) {
+        for (let key in firstOb) {
+            if (firstOb[key] === secondOb[key]) {
+                result = true;
+            } else { return false };
+        }
+    } else { return false };
+    return result
 }
 
 console.log(compareObject(origin, target))

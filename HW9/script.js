@@ -40,12 +40,15 @@ console.log(array, copy(array));
 
 //summa
 
-let sum = 0;
-
 function summa(a) {
-    return sum += a;
+    let sum = 0;
+    return function(a) {
+        sum = sum + a;
+        console.log(sum);
+    };
 }
 
-console.log(summa(3));
-console.log(summa(5));
-console.log(summa(20));
+let b = summa();
+b(3);
+b(5);
+b(20);

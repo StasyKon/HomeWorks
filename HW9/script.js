@@ -40,7 +40,7 @@ console.log(array, copy(array));
 
 //summa
 
-function summa(a) {
+function summa() {
     let sum = 0;
     return function(a) {
         sum = sum + a;

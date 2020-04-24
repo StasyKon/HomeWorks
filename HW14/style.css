@@ -1,0 +1,55 @@
+.squares {
+    display: flex;
+}
+
+.square {
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button {
+    width: 25px;
+    height: 25px;
+}
+
+.text {
+    min-width: 25px;
+    min-height: 25px;
+    background-color: #fff;
+    border: none;
+    line-height: 25px;
+}
+
+.bg-blue {
+    background-color: rgb(48, 192, 228);
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+.bg-red {
+    background-color: rgb(250, 87, 58);
+}
+
+.list {
+    border: 1px solid gray;
+    padding: 0;
+    max-width: 300px;
+}
+
+.item {
+    list-style-type: none;
+    border: 1px solid gray;
+    padding-left: 15px;
+    line-height: 30px;
+}

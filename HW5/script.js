@@ -1,6 +1,4 @@
-function circle() {
-    let radius = +prompt("Введите радиус");
-
+function circle(radius) {
     function getArea(radius) {
         let area = Math.PI * radius ** 2;
         return area;
@@ -15,10 +13,7 @@ function circle() {
     console.log(getCircumference(radius));
 }
 
-function average() {
-    let firstNumber = +prompt("Введите первое число");
-    let secondNumber = +prompt("Введите второе число");
-
+function average(firstNumber, secondNumber) {
     function getAverage(firstNumber, secondNumber) {
         let average = (firstNumber + secondNumber) / 2;
         return average;
@@ -27,11 +22,7 @@ function average() {
     console.log(getAverage(firstNumber, secondNumber));
 }
 
-function calculate() {
-    let x = +prompt("Введите первое число");
-    let y = +prompt("Введите второе число");
-    let action = prompt("Введите действие");
-
+function calculate(x, y, action) {
     function calc(x, y, action) {
         let total;
         switch (action) {
@@ -56,6 +47,6 @@ function calculate() {
     console.log(calc(x, y, action));
 }
 
-// circle();
-// average();
-// calculate();
+circle(5);
+average(5, 7);
+calculate(5, 2, '-');

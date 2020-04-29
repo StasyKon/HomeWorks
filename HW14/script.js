@@ -2,17 +2,21 @@ let plus = document.querySelectorAll('.plus');
 let minus = document.querySelectorAll('.minus');
 let text = document.querySelectorAll('.text');
 let squares = document.querySelector('.squares');
+
+let square = document.querySelectorAll('.square');
 let list = document.querySelector('.list');
 
 
 for (let i = 0; i < plus.length; i++) {
     plus[i].addEventListener('click', function getPlus() {
+        event.stopPropagation()
         text[i].innerText = ++text[i].innerText;
     })
 }
 
-for (let i = 0; i < plus.length; i++) {
+for (let i = 0; i < minus.length; i++) {
     minus[i].addEventListener('click', function getMinus() {
+        event.stopPropagation()
         text[i].innerText = --text[i].innerText;
     })
 }

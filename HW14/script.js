@@ -2,8 +2,6 @@ let plus = document.querySelectorAll('.plus');
 let minus = document.querySelectorAll('.minus');
 let text = document.querySelectorAll('.text');
 let squares = document.querySelector('.squares');
-
-let square = document.querySelectorAll('.square');
 let list = document.querySelector('.list');
 
 

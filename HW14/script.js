@@ -6,17 +6,21 @@ let list = document.querySelector('.list');
 
 
 for (let i = 0; i < plus.length; i++) {
-    plus[i].addEventListener('click', function getPlus() {
+    plus[i].addEventListener('click', function getPlus(event) {
         event.stopPropagation()
         text[i].innerText = ++text[i].innerText;
     })
 }
 
 for (let i = 0; i < minus.length; i++) {
-    minus[i].addEventListener('click', function getMinus() {
+    minus[i].addEventListener('click', function getMinus(event) {
         event.stopPropagation()
         text[i].innerText = --text[i].innerText;
     })
+}
+
+for (let paragraphs of text) {
+    paragraphs.addEventListener('click', (event) => { event.stopPropagation() })
 }
 
 function getColor(event) {
